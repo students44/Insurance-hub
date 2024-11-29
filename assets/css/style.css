@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: Poppins;
+
+}
+
+a{
+	text-decoration: none !important;
+}
+/*
+=================================================
+	HEADER SECTION START HERE
+=================================================
+*/
+
+/*---------------- TOP SECTION START ----------------*/
+.topBar{
+	background: #0a0a0a;
+}
+.topBar ul{
+	padding: 3px;
+	display:flex;
+	justify-content: right;
+}
+.topBar ul li{
+	list-style: none;
+}
+.topBar ul li a{
+	display: block;
+	padding: 10px;
+	color: #fff;
+	font-size: 15px;
+	margin: 0 5px;
+}
+
+.socail-icon ul li a{
+	transition: 0.3s;
+}
+.socail-icon ul li a:hover{
+	color: #54be73;
+}
+/*---------------- TOP SECTION END ----------------*/
+
+/*---------------- NAVBAR SECTION START HERE ----------------*/
+.navbar-section{
+	background: #fff;
+	border-bottom: 1px solid grey;
+
+}
+.navbar-section .navbar-brand h1{
+	font-size: 22px;
+	font-weight: bold;
+	color: #54be73;
+}
+.navbar-section .navbar-brand h1 span{
+	color: #0a0a0a;
+}
+.navbar-section .mynav ul{
+	display: flex;
+	align-items: center;
+}
+.navbar-section .mynav ul li a{
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0 10px;
+	padding: 50px 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #0a0a0a;
+	display: block;
+	transition: all 0.3s linear;
+}
+.navbar-section .mynav ul li a:hover{
+	color: #54be73;
+}
+
+#nav-btn{
+	color: #fff !important;
+	background: #0a0a0a;
+	padding: 10px 20px !important;
+	border-radius: 5px;
+}
+
+.dropDown{
+	position: relative;
+	
+}
+
+.dropdownMenu{
+	display: none;
+	position: absolute;
+	/*bottom: -92%;*/
+	width: 180px;
+	background: #fff;
+	border-top: 3px solid #54be73;
+	box-shadow: 0 0 10px -2px lightgrey;
+	z-index: 10;
+}
+.dropdownMenu a{
+	padding: 15px !important;
+	border-bottom: 1px solid lightgrey;
+	text-transform: capitalize !important;
+	display: block;
+	margin: 0px !important;
+
+}
+.dropDown:hover .dropdownMenu{
+	display: inline-block;
+}
+
+.subDropdownMenu{
+	display: none;
+	position: relative;
+}
+.subDropdown:hover .subDropdownMenu{
+	display: block;
+}
+
+/*---------------- NAVBAR SECTION END HERE ----------------*/
+
+/*
+=================================================
+	HEADER SECTION END HERE
+=================================================
+*/
+/*
+=================================================
+	SLIDER SECTION START HERE
+=================================================
+*/
+.slider-section{
+	width: 100%;
+}
+.slider-section .slide-content{
+	width: 100%;
+	height: 80vh;
+	position: relative;
+}
+.slider-section .slide-content:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	z-index: 1;
+
+}
+.slider-section .slide-img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	
+}
+.slider-section .slide-img img{
+ 	width: 100%;
+ 	height: 100%;
+ 	object-fit: cover;
+}
+.slider-section .slide-text-wrap{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	padding: 150px 0;
+	z-index: 100;
+
+
+}
+.slider-section .slide-text h1{
+	color: #fff;
+	font-size: 35px;
+	font-weight: 600;
+	font-family: Poppins;
+	margin: 30px 0;
+
+
+}
+.slider-section .slide-text p{
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
+	margin: 30px 0;
+}
+.slider-section .slide-btn a{
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: #fff;
+	background: #54be73;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.slider-section .owl-nav{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+
+}
+.slider-section .owl-next,
+.slider-section .owl-prev{
+	position: absolute;
+	outline: none !important;
+	border-radius: 5px !important;
+
+}
+.slider-section .owl-next:hover,
+.slider-section .owl-prev:hover{
+	background: rgba(0,0,0,0.4) !important;
+
+}
+
+.slider-section .owl-prev{
+	left: 20px;
+}
+.slider-section .owl-next{
+	right: 20px;
+}
+
+.slider-section .owl-next span,
+.slider-section .owl-prev span{
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	color:	lightgrey;
+	background: rgba(0,0,0,0.3);
+	padding-bottom: 5px;
+	display: block;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+}
+
+.slider-section .owl-dots{
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+
+}
+/*
+=================================================
+	SLIDER SECTION END HERE
+=================================================
+*/
+
+/*
+=================================================
+	ABOUT SECTION START HERE
+=================================================
+*/
+.about-seciton{
+	margin: 60px 0;
+}
+.about-seciton .about-text h1{
+	font-size: 32px;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 30px;
+}
+.about-seciton .about-text p{
+	font-size: 14px;
+	margin: 20px 0;
+	color: #555;
+}
+
+.about-seciton .about-text .about-btn{
+	margin: 40px 0; 
+}
+.about-seciton .about-text .about-btn a{
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: #fff;
+	background: #54be73;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+}
+/*
+=================================================
+	ABOUT SECTION END HERE
+=================================================
+*/
+
+/*
+=================================================
+	SERVICE SECTION START HERE
+=================================================
+*/
+.service-section{
+	margin: 60px 0;
+	margin-top: 100px;
+	background: #f8f8f8;
+	padding: 60px 0;
+}
+.section-title{
+	margin: 40px 0;
+}
+.section-title h2{
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 50px;
+	position: relative;
+}
+.section-title h2:after{
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -20px;
+	transform: translate(-50%);
+	width: 30px;
+	height: 1px;
+	background: #54be73;
+}
+.section-title p{
+	font-size: 14px;
+	font-weight: 600;
+	color: #555;
+}
+.service-section .service-box-container{
+	margin: 15px 0;
+	text-align: center;
+	padding: 0;
+}
+.service-box-container .service-box-text{
+	border: 1px solid lightgrey;
+	padding: 40px 10px;
+	transition: all 0.3s linear;
+}
+.service-box-container .service-box-text:hover{
+	box-shadow: 0 0 15px -5px grey;
+	border-color: transparent;
+}
+.service-box-container .service-box-text i{
+	font-size: 40px;
+	color: #54be73;
+	display: block;
+	margin-bottom: 20px;
+}
+.service-box-container .service-box-text h5{
+	font-size: 17px;
+	font-weight: 600;
+	margin: 20px 0;
+
+}
+.service-box-container .service-box-text p{
+	font-size: 15px;
+	font-weight: 500;
+	color: #666;
+}
+/*
+=================================================
+	SERVICE SECTION END HERE
+=================================================
+*/
+
+/*
+=================================================
+	AGENT SECTION START HERE
+=================================================
+*/
+.agent-section{
+	margin: 60px 0;
+}
+.agent-section .agent-content{
+	margin: 15px 0;
+}
+.agent-section .agent-content .agent-img img{
+	width: 100%;
+}
+.agent-section .agent-content .agent-text{
+	background: #54be73;
+	padding: 20px 5px;
+	text-align: center;
+}
+
+.agent-section .agent-content .agent-text h5{
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+.agent-section .agent-content .agent-text p{
+	font-size: 14px;
+	color: #222;
+	font-weight: 500;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+/*
+=================================================
+	AGENT SECTION END HERE
+=================================================
+*/
+
+/*
+=================================================
+	TETIMONIAL SECTION START HERE
+=================================================
+*/
+.testimonial-section{
+	padding: 150px 10px;
+	background: linear-gradient(to right, rgba(84, 190, 115,0.8), rgba(84, 190, 115,0.8)), url('../img/family.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.testimonial-section .tetimonial-container{
+	background: #fff;
+	border-radius: 5px;
+}
+.testimonial-section .tetimonial-container .testimonial-content{
+	padding: 30px 10px;
+}
+.testimonial-content i{
+	font-size: 30px;
+	color: #54be73;
+	display: block;
+	margin: 10px 0;
+}
+
+.testimonial-content p{
+	font-size: 15px;
+	font-weight: 500;
+	color: #555;
+	margin: 20px 0;
+}
+.testimonial-content .test-profile{
+	padding: 15px 0;
+	border-top: 1px solid #eee;
+}
+.testimonial-content .test-profile .test-img img{
+	width: 60px;
+}
+.test-profile .test-name h4{
+	font-size: 17px;
+	font-weight: 600;
+	margin: 15px;
+	color: #54be73;
+	position: relative;
+}
+.test-profile .test-name h4:before{
+	content: '';
+	position: absolute;
+	left: -15px;
+	top: 50%;
+	width: 10px;
+	height: 2px;
+	background: #54be73;
+}
+/*
+=================================================
+	TETIMONIAL SECTION END HERE
+=================================================
+*/
+.news-section{
+	margin: 60px 0;
+}
+.news-section .news-post-container{
+	border: 1px solid #eee;
+	margin: 15px 0;
+}
+.news-section .news-post-container img{
+	width: 100%;
+}
+.news-post-container .news-text{
+	padding: 10px;
+}
+.news-post-container .news-text h3{
+	font-size: 17px;
+	font-weight: bold;
+	color: #333;
+	margin: 5px 0;
+	text-transform: capitalize;
+	transition: 0.3s linear;
+
+}
+.news-post-container .news-text .post-det a:hover,
+.news-post-container .news-text h3:hover{
+	color: #54be73;
+}
+.news-post-container .news-text .post-det{
+	margin: 10px 0;
+}
+.news-post-container .news-text .post-det span{
+	font-size: 14px;
+	font-weight: 500;
+	color: #555;
+}
+.news-post-container .news-text .post-det a{
+	font-size: 14px;
+	color: #333;
+	font-weight: 500;
+	transition: 0.3s linear;
+
+}
+.news-post-container .news-text p{
+	font-size: 14px;
+	color: #555;
+	font-weight: 500;
+}
+/*
+=================================================
+	NEWS SECTION END HERE
+=================================================
+*/
+
+/*
+=================================================
+	ROUND WORLD SECTION START HERE
+=================================================
+*/
+.round-world-section{
+	margin: 50px 0;
+	padding:  60px 10px;
+	padding-bottom: 10
+	0px;
+	background: url('../img/clbg.jpg');
+	background-position: center right;
+	/*background-size: cover;*/
+	background-repeat: no-repeat;
+	position: relative;
+
+}
+
+.round-world-section:after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 230, 149, 0.70);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.round-world-section .section-title h2,
+.round-world-section .section-title p{
+	color: #fff;
+}
+
+.round-container{
+	position: relative;
+	z-index: 1;
+
+
+}
+.round-world{
+	margin: 50px 0;
+}
+
+/*
+=================================================
+	ROUND WORLD SECTION END HERE
+=================================================
+*/
+
+/*
+=================================================
+	CONTACT SECTION START HERE
+=================================================
+*/
+.contact-section .contact-form{
+	background: rgb(244, 244, 244);
+	border-radius: 4px;
+	padding: 30px;
+}
+.contact-section .contact-form label{
+	font-size: 14px;
+	font-weight: 500;
+	color: #666;
+	margin: 0px 0;
+}
+.contact-section .contact-form input{
+	height: 40px;
+}
+.contact-section .contact-form textarea,
+.contact-section .contact-form input{
+	border-radius: 0px;
+	border: 1px solid lightgrey;
+	font-size: 15px;
+	margin: 10px 0;
+	margin-bottom: 25px;
+}
+
+.contact-section .contact-form .contact-btn{
+	margin-top: 30px;
+}
+.contact-section .contact-form .contact-btn button{
+	padding: 5px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	background: #54be73;
+	border: none;
+
+}
+/*
+=================================================
+	CONTACT SECTION END HERE
+=================================================
+*/
+
+/*
+=================================================
+	PURCHASE SECTION START HERE
+=================================================
+*/
+.purchase-section{
+	padding: 30px 10px;
+	background: #54be73;
+	margin-top: 60px;
+}
+.purchase-section h1{
+	margin: 0;
+	margin-right: 10px;
+	margin-top: 10px;
+	color: #fff;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.purchase-section a{
+	padding: 15px 30px;
+	font-size: 17px;
+	color: #fff;
+	background: rgb(0, 0, 0);
+	display: inline-block;
+	margin-top: 10px;
+	border-radius: 5px;
+
+}
+/*
+=================================================
+	PURCHASE SECTION END HERE
+=================================================
+*/
+
+/*
+=================================================
+	FOOTER SECTION START HERE
+=================================================
+*/
+.footer-section{
+	background: rgb(30, 30, 30);
+	padding-top: 30px;
+
+}
+.footer-section .footer-text{
+	margin: 10px 0;
+}
+.footer-section .footer-text h3{
+	font-size: 20px;
+	font-size: 500;
+	color: #fff;
+	margin-bottom: 40px;
+	display: inline-block;
+	position: relative;
+}
+.footer-section .footer-text h3:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	width: 30px;
+	height: 1px;
+	background: #54be73;
+}
+.footer-section .footer-text p{
+	font-size: 15px;
+	color: #fff;
+	color: lightgrey;
+	margin: 10px 0;
+}
+.footer-link{
+	/*margin: 10px 0;*/
+}
+.footer-link li a{
+	display: block;
+	font-size: 15px;
+	padding: 8px 0;
+	border-bottom: 1px solid #333;
+	color: lightgrey;
+}
+.copyright span{
+	font-size: 13px;
+	color: lightgrey;
+	font-weight: 500;
+}
+/*
+=================================================
+	FOOTER SECTION END HERE
+=================================================
+*/
